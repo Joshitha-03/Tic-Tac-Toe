@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    text-align: center;
+    margin:10px 0;
+}
+.game{
+    width: 78vh;
+    height: 78vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    background-color: black;
+}
+.box{
+    width: 25vmin;
+    height: 25vmin;
+    background-color: white;
+    margin: 2px;
+    color: red;
+    font-size: 3rem;
+}
