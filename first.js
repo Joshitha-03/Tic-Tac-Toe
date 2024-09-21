@@ -16,10 +16,17 @@ boxes.forEach((box)=>{
         box.innerHTML="X";
         turn0=true;
       }
-      box.disabled="true";
+      box.disabled=true;
+      count++;
       checkwinner();
+      let iswinner = checkwinner();
+    if(count==9&&!iswinner){
+    msgcontainer.classList.remove("hide");
+    msg.innerText="Game is draw,please try again";
+}
     })
 })
+
 const checkwinner =()=>{
     for(pattern of winpattern){
         let pos1= boxes[pattern[0]].innerText;
@@ -29,16 +36,11 @@ const checkwinner =()=>{
         if(pos1!=="" && pos2!=="" &&pos3!=""){
             if(pos1===pos2&&pos2===pos3){
                 showwinner(pos1);
-            }
-            else{
-                  count++;
+                return true;
             }
         }
     }
-    if(count===8){
-        msgcontainer.classList.remove("hide");
-       msg.innerText="Game is draw, please take new game";
-    }
+  return false;
 }
 const disable=()=>{
     for(box of boxes){
