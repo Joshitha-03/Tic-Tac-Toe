@@ -2,9 +2,44 @@
     margin: 0;
     padding: 0;
 }
-.heading{
+body{
+    background-color: aqua;
     text-align: center;
-    margin:10px 0;
+}
+.hide{
+    display: none;
+}
+#newgame{
+   background-color: green; 
+   color: white;
+   font-style: italic;
+   padding: 0.5rem;
+   font-size: 1.25rem;
+   border: none;
+   border-radius: 5px;
+}
+.container{
+    width: 100vh;
+    height: 100vh;
+    margin:30vmin auto;
+}
+.heading{
+    margin-bottom: 7vmin;
+}
+#reset{
+    background-color: green; 
+   color: white;
+   font-style: italic;
+   padding: 0.5rem;
+   font-size: 1.25rem;
+   border: none;
+   border-radius: 5px;
+   margin-top: 1em;
+}
+.msgcontainer{
+    margin-top: 5vmin;
+    font-size: 3em;
+    gap: 2rem;
 }
 .game{
     width: 78vh;
@@ -22,6 +57,6 @@
     height: 25vmin;
     background-color: white;
     margin: 2px;
-    color: red;
-    font-size: 3rem;
+    color: black;
+    font-size: 4rem;
 }
